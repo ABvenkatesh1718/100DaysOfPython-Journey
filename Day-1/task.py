@@ -1,6 +1,6 @@
 import os
 import time
-
+# from Logger.log import logger
 
 def addition(number_1: int, number_2: int) -> int:
     """
@@ -77,7 +77,7 @@ def get_valid_choice() -> int | None:
         print("3 -> Multiplication")
         print("4 -> Division")
         print("5 -> Exit")
-        choice_input = input("Enter Your Choice => ").strip()
+        choice_input = input("Enter Your Choice => ").strip() ##string.. => "1"
 
         if not choice_input.isdigit():
             print("Invalid input! Please enter a number between 1 and 5.")
